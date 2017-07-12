@@ -78,7 +78,7 @@ a:active {text-decoration: none; color: white;}
 	z-index: 1;
 	top: 0px;
 	position: fixed;
-	height: 57px;
+	height: 70px;
 	width: 100%;
 	padding: 0px;
 	background-color: #4e646f;
@@ -88,21 +88,20 @@ a:active {text-decoration: none; color: white;}
 .logo{
  	position: absolute;
   	left: 5%;
-    height: 22.5px;
-    width: 138px;
-  	margin-top:9px;
+    height: 30px;
+  	margin-top:10px;
 }
 
 .return{
 	position: fixed;
 	right: 5%;
-	margin: 20px;
+	margin-top: 25px;
 }
 
 /* Banner */
 
 .banner-wrapper{
-	margin-top: 57px;
+	margin-top: 70px;
 	height: 300px;
 	width: 100%;
 	padding: 0px;
