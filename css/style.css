@@ -95,7 +95,7 @@ a:active {text-decoration: none; color: white;}
 .return{
 	position: fixed;
 	right: 5%;
-	margin-top: 25px;
+	margin-top: 25.5px;
 }
 
 /* Banner */
@@ -226,6 +226,11 @@ a:active {text-decoration: none; color: white;}
 		display: block;
 	
 	}
+	
+	.logo{
+    height: 20px;
+  	margin-top:12.5px;
+}
     
 }
 
