@@ -7,10 +7,9 @@ body {
 		width: 100%;
 		min-width: 320px;
 		
-		font-family: 'Open Sans', sans-serif;
+		font-family: 'Lato', sans-serif;
 		font-size: 14px;
 		font-weight: 500px;
-		color: white;
 		
 	}
 
@@ -23,31 +22,28 @@ body {
 /* Fonts */
 
 h1{
-	font-family: 'Open Sans', sans-serif;
 	font-size: 30px;
 	font-weight: 600px;
 	color: white;
 }
 
 h2{
-	font-family: 'Open Sans', sans-serif;
 	font-size: 30px;
 	font-weight: 500px;
 	color: #27989f;
 }
 
 h3{
-	font-family: 'Open Sans', sans-serif;
 	font-size: 15px;
-	font-weight: 500px;
+	font-weight: 600px;
 	color: white;
 }
 
 h4{
-	font-family: 'Open Sans', sans-serif;
-	font-size: 20px;
-	font-weight: 500px;
-	color: white;
+	font-size: 25px;
+	font-weight: 600px;
+	color: #27989f;
+	margin: 30px 0 15px 0;
 }
 
 .black-font{
@@ -78,36 +74,38 @@ a:active {text-decoration: none; color: white;}
 	z-index: 1;
 	top: 0px;
 	position: fixed;
-	height: 70px;
+	height: 60px;
 	width: 100%;
 	padding: 0px;
-	background-color: #4e646f;
+	background-color: #0b2d2f;
 }
 
 
 .logo{
  	position: absolute;
   	left: 5%;
-    height: 30px;
-  	margin-top:10px;
+    height: 25px;
+  	margin-top:9px;
 }
 
 .return{
 	position: fixed;
 	right: 5%;
-	margin-top: 25.5px;
+	margin-top: 20px;
 }
 
 /* Banner */
 
 .banner-wrapper{
-	margin-top: 70px;
+	margin-top: 60px;
 	height: 300px;
 	width: 100%;
 	padding: 0px;
-	background: url(https://cdn.workato.com/assets/home/header-cover-c65bc672ae8cec43cc99e08847b81bb5.svg) #2b8aa3 no-repeat center bottom;
-	background-size: cover;	
-	background-position: top;
+	
+	background: #0b2d2f url(https://cdn.workato.com/assets/home/header-cover-abcdbc68b239568047bab818dc36e3a2.svg) no-repeat 50% 0%;
+    background-size: auto 150%;
+    overflow: hidden;
+    position: relative;
 }
 
 .banner-header{
@@ -121,23 +119,59 @@ a:active {text-decoration: none; color: white;}
 
 /* Buttons */
 
+
+
 .buttons-wrapper{
-	height: 300px;
+	height: 400px;
 	width: 100%;
-	padding: 0px;
 	background-color: #fafafa;
-	padding-top: 20px;
+	padding: 100px 20px 100px 20px;
 }
 
 .button{
 	border-radius:2px;
-	height: 150px;
-	width: 400px;
+	height: 200px;
+	width: 300px;
 	display: float;
-	background-color: #27989f;
+	background-color: white;
 	margin: 10px 10px 0px 10px;
 	text-align: center;
-	padding: 20px 50px 0px 50px;
+	position: relative;
+	border: 1px solid #e7e7e7;
+	border-radius: 5px;
+}
+
+
+.button-home{
+  	
+  	height: 30px;
+  	width: calc(100% - 40px);  
+  	background-image: none;
+    border: 1px solid;
+    border-radius: 2px;
+    cursor: pointer;
+    font-size: 15px;
+    text-align: center;
+    text-decoration: none;
+    transition: 100ms ease;
+    white-space: nowrap;
+    color: white;
+  	text-shadow: none;
+  	box-shadow:none;
+	background-color:#ff952e;
+	border-color: #ff952e;
+	
+	padding-top: 2px;
+	bottom: 20px;
+	position: absolute;
+	margin: 0 20px 0 20px;
+}
+
+.button-home:hover{
+    background-color:#ff8815;
+    -webkit-transition: background-color 200ms ease;
+    -ms-transition: background-color 200ms ease;
+    transition: background-color 200ms ease;
 }
 
 
@@ -158,8 +192,8 @@ a:active {text-decoration: none; color: white;}
 }
 
 .container-wrapper{
-	max-width: 1000px;
-	margin: 50px auto;
+	margin: 0 auto;
+	padding: 0 20px 0 20px;
 }
 .container {
     display: flex;
@@ -171,6 +205,15 @@ a:active {text-decoration: none; color: white;}
     flex-flow: row wrap;
     -webkit-flex-flow: row wrap;
     -moz-flex-flow: row wrap;
+	margin: 0 auto;
+}
+
+#container-button{
+	max-width: 800px;
+}
+
+#container-apps{
+	max-width: 800px;
 }
 
 .flex-dummy {
@@ -191,9 +234,7 @@ a:active {text-decoration: none; color: white;}
 .style {
 	width: 100%; 
 	height: 75px;
-	border: solid 0.5px;
 	border-radius: 2px;
-	border-color: black;	
 }
 
 .item-name{
@@ -202,12 +243,62 @@ a:active {text-decoration: none; color: white;}
 	text-align: center;
 }
 
+#aftership{
+	background-image: url(../images/aftership.png);
+    background-size: auto 100%;
+}
+
+#chartmogul{
+	background-image: url(../images/chartmogul.png);
+    background-size: auto 100%;
+}
+
+#constantcontact{
+	background-image: url(../images/constantcontact.png);
+    background-size: auto 100%;
+}
+
+#domo{
+	background-image: url(../images/domo.png);
+    background-size: auto 100%;
+}
+
+#googleanalytics{
+	background-image: url(../images/googleanalytics.png);
+    background-size: auto 100%;
+}
+
+#microsoftoffice365{
+	background-image: url(../images/microsoftoffice365.png);
+    background-size: auto 100%;
+}
+
+#shopware{
+	background-image: url(../images/shopware.png);
+    background-size: auto 100%;
+}
+
+#spotify{
+	background-image: url(../images/spotify.png);
+    background-size: auto 100%;
+}
+
+#stripe{
+	background-image: url(../images/stripe.png);
+    background-size: auto 100%;
+}
+
+#transdirect{
+	background-image: url(../images/transdirect.png);
+    background-size: auto 100%;
+}
+
 /* Footer */
 
 .footer{
 	height: 300px;
 	width: 100%;
-	background-color: #4e646f;
+	background-color: #0b2d2f;
 	text-align: center;
 	padding: 100px 12px 0px 12px;
 }
@@ -215,6 +306,7 @@ a:active {text-decoration: none; color: white;}
 .footer-container{
 	max-width: 800px;
 	margin: 0px auto;
+	color: white;
 }
 @media only screen and (max-width: 900px) {
 	
@@ -229,7 +321,7 @@ a:active {text-decoration: none; color: white;}
 	
 	.logo{
     height: 20px;
-  	margin-top:12.5px;
+  	margin-top:10px;
 }
     
 }
