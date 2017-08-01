@@ -120,7 +120,7 @@ a:active {text-decoration: none; color: white;}
 
 
 .buttons-wrapper{
-	height: 400px;
+	height: auto;
 	width: 100%;
 	background-color: #fafafa;
 	padding: 100px 20px 100px 20px;
@@ -308,10 +308,7 @@ a:active {text-decoration: none; color: white;}
 	color: white;
 }
 @media only screen and (max-width: 720px) {
-	
-	.buttons-wrapper{
-		height: 500px;
-	}
+
 	
 	.button{	
 		display: block;
@@ -332,5 +329,9 @@ h4{
     
 }
 
+@media only screen and (max-width: 720px) {
+	.button{
+	}
+}
 
 
