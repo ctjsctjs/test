@@ -10,6 +10,12 @@ function readTextFile(file)
             {
                 var allText = rawFile.responseText;
 				console.log(allText);
+				lineArray = textArea.value.split("\n");
+				
+					for(var i=0; i<lineArray.length; i++){
+						console.log(lineArray[i]);
+					}
+				}
             }
         }
     }
@@ -17,3 +23,4 @@ function readTextFile(file)
 }
 
 readTextFile("README.md");
+
