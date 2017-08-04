@@ -1,15 +1,15 @@
 /* General */
 
 body {
-		background: #fff;
-		padding: 0px;
-		margin: 0px;
-		width: 100%;
-		min-width: 320px;
+	background: #fff;
+	padding: 0px;
+	margin: 0px;
+	width: 100%;
+	min-width: 320px;
 		
-		font-family: 'Lato', sans-serif;
-		font-size: 14px;
-		font-weight: 500;
+	font-family: Lato, sans-serif;
+	font-size: 14px;
+	font-weight: 500;
 		
 	}
 
@@ -22,24 +22,28 @@ body {
 /* Fonts */
 
 h1{
+	font-family: Lato, sans-serif;
 	font-size: 30px;
 	font-weight: 600;
 	color: white;
 }
 
 h2{
+	font-family: Lato, sans-serif;
 	font-size: 30px;
-	font-weight: 500;
+	font-weight: 600;
 	color: #27989f;
 }
 
 h3{
-	font-size: 15px;
+	font-family: Lato, sans-serif;
+	font-size: 18px;
 	font-weight: 600;
-	color: white;
+	color: #ff952e;
 }
 
 h4{
+	font-family: Lato, sans-serif;
 	font-size: 25px;
 	font-weight: 600;
 	color: #27989f;
@@ -142,7 +146,7 @@ a:active {text-decoration: none; color: white;}
 
 .button-home{
   	
-  	height: 30px;
+  	height: 41px;
   	width: calc(100% - 40px);  
   	background-image: none;
     border: 1px solid;
@@ -159,7 +163,7 @@ a:active {text-decoration: none; color: white;}
 	background-color:#ff952e;
 	border-color: #ff952e;
 	
-	padding-top: 2px;
+	padding-top: 6px;
 	bottom: 20px;
 	position: absolute;
 	margin: 0 0px 0 0px;
@@ -191,8 +195,8 @@ a:active {text-decoration: none; color: white;}
 
 .container-wrapper{
 	margin: 0 auto;
-	padding: 0 20px 0 20px;
 }
+
 .container {
     display: flex;
     display: -webkit-flex;
@@ -233,6 +237,14 @@ a:active {text-decoration: none; color: white;}
 	width: 100%; 
 	height: 75px;
 	border-radius: 2px;
+	opacity: 1;
+}
+
+.style:hover{
+	opacity: 0.8;
+	transition: opacity .25s ease;
+   -moz-transition: opacity .25s ease;
+   -webkit-transition: opacity .25s ease;
 }
 
 .item-name{
@@ -306,31 +318,25 @@ a:active {text-decoration: none; color: white;}
 	margin: 0px auto;
 	color: white;
 }
-@media only screen and (max-width: 720px) {
 
+@media only screen and (max-width: 720px) {
 	
 	.button{	
-		display: block;
-	
+		display: block;	
 	}
 	
 	.logo{
-    height: 20px;
-  	margin-top:10px;
+		height: 20px;
+		margin-top:10px;
 	}
 
-h4{
-	font-size: 18px;
-	font-weight: 600;
-	color: #27989f;
-	margin: 10px 0 15px 0;
-}
+	h4{
+		font-size: 18px;
+		font-weight: 600;
+		color: #27989f;
+		margin: 10px 0 15px 0;
+	}
     
-}
-
-@media only screen and (max-width: 720px) {
-	.button{
-	}
 }
 
 
