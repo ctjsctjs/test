@@ -9,13 +9,13 @@ function readTextFile(file)
             if(rawFile.status === 200 || rawFile.status == 0)
             {
                 var allText = rawFile.responseText;
-				console.log(allText);
-				lineArray = textArea.value.split("\n");
+		console.log(allText);
+		lineArray = textArea.value.split("\n");
 				
-					for(var i=0; i<lineArray.length; i++){
-						console.log(lineArray[i]);
-					}
-				}
+		for(var i=0; i<lineArray.length; i++){
+		console.log(lineArray[i]);
+		}
+	
             }
         }
     }
