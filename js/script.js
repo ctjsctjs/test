@@ -1,5 +1,5 @@
 $.getJSON("../test/js/adapters.json", function(json) {
-});
+
 
 
 for (var i = 0; i < json.adapters.length; i++){
@@ -24,3 +24,4 @@ div.innerHTML += "<div class='item-name black-font'>" + 'test' + "</div>";
 
 
 document.getElementById("container-apps").prepend(div);
+});
