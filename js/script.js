@@ -1,7 +1,7 @@
 $.getJSON("../test/js/adapters.json", function(json) {
-	console.log(adapters.obj.name);
-	console.log(adapters.obj.image);
-	console.log(adapters.obj.link);
+	console.log(adapters[0].name);
+	console.log(adapters[0].image);
+	console.log(adapters[0].link);
 	for (var i = 0; i < adapters.length; i++){
 		
 	    var obj = adapters[i];
