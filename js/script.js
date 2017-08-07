@@ -2,8 +2,6 @@ $.getJSON("../test/js/adapters.json", function(json) {
 	console.log(adapters.obj.name);
 	console.log(adapters.obj.image);
 	console.log(adapters.obj.link);
-});
-
 	for (var i = 0; i < adapters.length; i++){
 		
 	    var obj = adapters[i];
@@ -26,3 +24,6 @@ $.getJSON("../test/js/adapters.json", function(json) {
 
 		document.getElementById("container-apps").prepend(div);
 	}
+});
+
+	
