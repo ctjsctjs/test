@@ -1,5 +1,7 @@
 $.getJSON("../test/js/adapters.json", function(json) {
-	
+	console.log(adapters.obj.name);
+	console.log(adapters.obj.image);
+	console.log(adapters.obj.link);
 });
 
 	for (var i = 0; i < json.adapters.length; i++){
