@@ -1,7 +1,9 @@
 $.getJSON("../test/js/adapters.json", function(json) {
+	
+});
 
 	for (var i = 0; i < json.adapters.length; i++){
-		console.log("test");
+		
 	    var obj = json.adapters[i];
 		console.log(obj.name);
 		console.log(obj.image);
@@ -21,5 +23,4 @@ $.getJSON("../test/js/adapters.json", function(json) {
 		div.innerHTML += "<div class='item-name black-font'>" + obj.name + "</div>"; 
 
 		document.getElementById("container-apps").prepend(div);
-	}	
-});
+	}
