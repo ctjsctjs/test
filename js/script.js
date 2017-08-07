@@ -1,19 +1,4 @@
-function readTextFile(file)
-{
-    var rawFile = new XMLHttpRequest();
-    rawFile.open("GET", file, false);
-    rawFile.onreadystatechange = function ()
-    {
-        if(rawFile.readyState === 4)
-        {
-            if(rawFile.status === 200 || rawFile.status == 0)
-            {
-                var allText = rawFile.responseText;
-				console.log(allText);
-            }
-        }
-    }
-    rawFile.send(null);
-}
+$.getJSON("../js/adapters.json", function(json) {
+    console.log(json); // this will show the info it in firebug console
+});
 
-readTextFile("README.md");

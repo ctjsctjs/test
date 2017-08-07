@@ -238,6 +238,7 @@ a:active {text-decoration: none; color: white;}
 	height: 75px;
 	border-radius: 2px;
 	opacity: 1;
+	background-size: auto 100%;
 }
 
 .style:hover{
@@ -255,52 +256,42 @@ a:active {text-decoration: none; color: white;}
 
 #aftership{
 	background-image: url(../images/aftership.png);
-    background-size: auto 100%;
 }
 
 #chartmogul{
 	background-image: url(../images/chartmogul.png);
-    background-size: auto 100%;
 }
 
 #constantcontact{
 	background-image: url(../images/constantcontact.png);
-    background-size: auto 100%;
 }
 
 #domo{
 	background-image: url(../images/domo.png);
-    background-size: auto 100%;
 }
 
 #googleanalytics{
 	background-image: url(../images/googleanalytics.png);
-    background-size: auto 100%;
 }
 
 #microsoftoffice365{
 	background-image: url(../images/microsoftoffice365.png);
-    background-size: auto 100%;
 }
 
 #shopware{
 	background-image: url(../images/shopware.png);
-    background-size: auto 100%;
 }
 
 #spotify{
 	background-image: url(../images/spotify.png);
-    background-size: auto 100%;
 }
 
 #stripe{
 	background-image: url(../images/stripe.png);
-    background-size: auto 100%;
 }
 
 #transdirect{
 	background-image: url(../images/transdirect.png);
-    background-size: auto 100%;
 }
 
 /* Footer */
