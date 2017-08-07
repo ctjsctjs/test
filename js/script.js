@@ -1,5 +1,5 @@
 $.getJSON("../test/js/adapters.json", function(json) {
-
+	console.log('here1');
 	for (var i = 0; i < json.adapters.length; i++){
 	    var obj = json.adapters[i];
 		console.log(obj.name);
