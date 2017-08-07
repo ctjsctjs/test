@@ -4,9 +4,9 @@ $.getJSON("../test/js/adapters.json", function(json) {
 	console.log(adapters.obj.link);
 });
 
-	for (var i = 0; i < json.adapters.length; i++){
+	for (var i = 0; i < adapters.length; i++){
 		
-	    var obj = json.adapters[i];
+	    var obj = adapters[i];
 		console.log(obj.name);
 		console.log(obj.image);
 		console.log(obj.link);
