@@ -1,4 +1,4 @@
 $.getJSON("../test/js/adapters.json", function(json) {
-	console.log(json.name);
+	console.log(json.adapters);
 });
 
