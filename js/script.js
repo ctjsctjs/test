@@ -1,4 +1,5 @@
-$.getJSON("../test/js/adapters.json", function(json) {
-    console.log(json); // this will show the info it in firebug console
+$.getJSON("../js/adapters.json", function(json) {
+    var data = JSON.parse(data);
+	console.log(data.name);
 });
 
