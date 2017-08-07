@@ -19,7 +19,6 @@ $.getJSON("../test/js/adapters.json", function(json) {
 		div.appendChild(a);
 		div.innerHTML += "<div class='item-name black-font'>" + obj.name + "</div>"; 
 
-
 		document.getElementById("container-apps").prepend(div);
 	}	
 });

@@ -226,14 +226,14 @@ a:active {text-decoration: none; color: white;}
   margin-bottom: 0 !important;
 }
 
-.container .item { 
+#container-apps>div { 
 	width: 75px; 
 	height: 100px; 
 	background: white; 
 	margin: 0 5% 75px; 
 	}
 	
-.style {
+#container-apps>div>a>img {
 	width: 100%; 
 	height: 75px;
 	border-radius: 2px;
@@ -241,7 +241,7 @@ a:active {text-decoration: none; color: white;}
 	background-size: auto 100%;
 }
 
-.style:hover{
+#container-apps>div>a>img:hover{
 	opacity: 0.8;
 	transition: opacity .25s ease;
    -moz-transition: opacity .25s ease;

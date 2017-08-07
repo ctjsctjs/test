@@ -1,9 +1,21 @@
 {
 	"adapters":[
 		{
-		"name":"Pumpkin Spice Bread Recipe",
-		"image":"img/bread.jpg",
-		"link":"../images/aftership.png"
+		"name":"Aftership",
+		"image":"images/aftership.png",
+		"link":"https://www.workato.com/custom_adapters/1316?token=b83769ad"
+		}
+		
+		{
+		"name":"Chartmogul",
+		"image":"images/chartmogul.png",
+		"link":"https://www.workato.com/custom_adapters/1319?token=51dd82ec"
+		}
+		
+		{
+		"name":"Constant Contact",
+		"image":"img/constantcontact.png",
+		"link":"https://www.workato.com/custom_adapters/1320?token=f6157902"
 		}
 	]
 }
