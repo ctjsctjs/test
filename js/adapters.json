@@ -53,11 +53,15 @@
 		"name":"Stripe",
 		"image":"images/stripe.png",
 		"link":"https://www.workato.com/custom_adapters/1327?token=0f626598"
-		},
-		
+		},		
 		{
 		"id":"10",
 		"name":"Transdirect",
+		"image":"images/transdirect.png",
+		"link":"https://www.workato.com/custom_adapters/1329?token=d180f84e"
+		},
+		"id":"11",
+		"name":"Test",
 		"image":"images/transdirect.png",
 		"link":"https://www.workato.com/custom_adapters/1329?token=d180f84e"
 		}
