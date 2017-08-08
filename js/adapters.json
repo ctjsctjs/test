@@ -59,12 +59,6 @@
 		"name":"Transdirect",
 		"image":"images/transdirect.png",
 		"link":"https://www.workato.com/custom_adapters/1329?token=d180f84e"
-		},
-		{
-		"id":"11",
-		"name":"Test",
-		"image":"images/transdirect.png",
-		"link":"https://www.workato.com/custom_adapters/1329?token=d180f84e"
 		}
 	]
 }
