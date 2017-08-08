@@ -13,12 +13,6 @@ body {
 		
 	}
 
-
-.push{
-	height: 60px;
-	width: 100%;
-}
-
 /* Fonts */
 
 h1{
@@ -143,7 +137,6 @@ a:active {text-decoration: none; color: white;}
 	padding: 20px;
 }
 
-
 .button-home{
   	
   	height: 41px;
@@ -176,10 +169,43 @@ a:active {text-decoration: none; color: white;}
     transition: background-color 200ms ease;
 }
 
-
-
-
 /* App list */
+
+#search-bar{
+	height:60px;
+	width: 100%;
+	margin-bottom: 50px;
+	padding: 0 20px 0 20px;
+}
+
+i{
+	color: #e3e3e3;
+	position: relative;
+	left: 20px;
+	top: -40px;	
+}
+
+.icon-container{
+	width:100%;
+	max-width: 800px;
+}
+
+.search-form{
+	width: 100%;
+	max-width: 800px;
+	height: 100%;
+	padding: 20px 20px 20px 60px;
+	border: 1px solid #e3e3e3;
+	border-radius: 2px;
+	transition: border linear 0.2s;
+}
+
+.search-form:focus {
+    outline: none !important;
+    border:1px solid #27989f;
+    box-shadow: 0 0 2px #719ECE;
+}
+
 
 .list-wrapper{
 	width: 100%;
@@ -195,6 +221,10 @@ a:active {text-decoration: none; color: white;}
 
 .container-wrapper{
 	margin: 0 auto;
+}
+
+#app-wrapper{
+	min-height: 400px;
 }
 
 .container {
@@ -231,6 +261,7 @@ a:active {text-decoration: none; color: white;}
 	height: 100px; 
 	background: white; 
 	margin: 0 5% 75px; 
+	
 	}
 	
 #container-apps>div>a>img {
@@ -254,46 +285,6 @@ a:active {text-decoration: none; color: white;}
 	text-align: center;
 }
 
-#aftership{
-	background-image: url(../images/aftership.png);
-}
-
-#chartmogul{
-	background-image: url(../images/chartmogul.png);
-}
-
-#constantcontact{
-	background-image: url(../images/constantcontact.png);
-}
-
-#domo{
-	background-image: url(../images/domo.png);
-}
-
-#googleanalytics{
-	background-image: url(../images/googleanalytics.png);
-}
-
-#microsoftoffice365{
-	background-image: url(../images/microsoftoffice365.png);
-}
-
-#shopware{
-	background-image: url(../images/shopware.png);
-}
-
-#spotify{
-	background-image: url(../images/spotify.png);
-}
-
-#stripe{
-	background-image: url(../images/stripe.png);
-}
-
-#transdirect{
-	background-image: url(../images/transdirect.png);
-}
-
 /* Footer */
 
 .footer{
@@ -302,6 +293,7 @@ a:active {text-decoration: none; color: white;}
 	background-color: #0b2d2f;
 	text-align: center;
 	padding: 100px 12px 0px 12px;
+	margin-top: 100px;
 }
 
 .footer-container{

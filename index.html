@@ -13,7 +13,8 @@
         <link rel="stylesheet" href="css/style.css" />
         <link href='https://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    </head>
+		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	</head>
 
     <body>
         <div class="nav-wrapper">
@@ -52,7 +53,11 @@
             <div class="list-header">
                 <h2>Custom Adapters</h1>
             </div>
-            <div class="container-wrapper">
+			<div class="container" id="search-bar">		
+			<input class="search-form" placeholder="Search app" id ="search-form" onkeyup="filterFunc()">
+			<div class="icon-container"><i class="material-icons">search</i></div>
+			</div>
+            <div class="container-wrapper" id="app-wrapper">
                 <div class="container" id="container-apps">																	
                     <div class="item flex-dummy"></div>
                     <div class="item flex-dummy"></div>
@@ -63,7 +68,6 @@
                 </div>
             </div>
         </div>
-        <div class="push"></div>
     <div class="footer">
         <div class="footer-container">
             Apps listed on this marketplace are created by third party vendors. These applications are not warranted or provided by Workato. Please look through their documentation and ensure that these apps are right for you before proceeding.<br><br>
