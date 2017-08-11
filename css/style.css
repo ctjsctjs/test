@@ -172,10 +172,12 @@ a:active {text-decoration: none; color: white;}
 /* App list */
 
 #search-bar{
-	height:60px;
-	width: 100%;
-	margin-bottom: 50px;
-	padding: 0 20px 0 20px;
+    height:60px;
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto 50px auto;
+    padding: 0 20px 0 20px;
+    position: relative;
 }
 
 i{
