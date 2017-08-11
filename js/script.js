@@ -18,23 +18,23 @@ function filterFunc() {
 $.getJSON("../test/adapters/adapters.json", function (json) {
   var container = document.getElementById("container-apps");
   var listCol = 5;
-    for (var i = 0; i < json.adapters.length; i++) {
-      var obj = json.adapters[i];
-      var div = document.createElement('div');
-        var img = document.createElement('img');
-        var a = document.createElement('a');
-        div.className = 'filter';	
-        img.src = obj.image;	
-        a.href = obj.link;
-        a.appendChild(img);
-        a.target = '_blank';
-        div.appendChild(a);
-        div.innerHTML += "<div class='item-name black-font'>" + obj.name + "</div>";
-        container.appendChild(div);
-	}
+  for (var i = 0; i < json.adapters.length; i++) {
+    var obj = json.adapters[i];
+    var div = document.createElement('div');
+    var img = document.createElement('img');
+    var a = document.createElement('a');
+    div.className = 'filter';	
+    img.src = obj.image;	
+    a.href = obj.link;
+    a.appendChild(img);
+    a.target = '_blank';
+    div.appendChild(a);
+    div.innerHTML += "<div class='item-name black-font'>" + obj.name + "</div>";
+    container.appendChild(div);
+    }
     
-    //Generate dummy box for responsive
-    for (i = 0; i < (listCol); i++) {
+  //Generate dummy box for responsive
+  for (i = 0; i < (listCol); i++) {
     var div = document.createElement('div');
     div.className = 'item flex-dummy';
     container.appendChild(div);
