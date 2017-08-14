@@ -30,7 +30,7 @@ h2{
 h3{
     font-family: Lato, sans-serif;
     font-size: 18px;
-    font-weight: 600;
+    font-weight: 500;
     color: #ff952e;
 }
 
@@ -168,9 +168,11 @@ a:active {text-decoration: none; color: white;}
 
 #search-bar{
     height:60px;
+    max-width: 800px;
     width: 100%;
-    margin-bottom: 50px;
+    margin: 0 auto 50px auto;
     padding: 0 20px 0 20px;
+    position: relative;
 }
 
 i{
@@ -250,14 +252,19 @@ i{
     margin-bottom: 0 !important;
 }
 
-#container-apps>div { 
+#container-apps{
+    list-style: none;
+}
+
+#container-apps>li { 
     width: 75px; 
     height: 100px; 
     background: white; 
-    margin: 0 5% 75px; 
+    margin: 0 5% 75px;
+    list-style: none; 
 }
 
-#container-apps>div>a>img {
+#container-apps>li>a>img {
     width: 100%; 
     height: 75px;
     border-radius: 2px;
@@ -265,7 +272,7 @@ i{
     background-size: auto 100%;
 }
 
-#container-apps>div>a>img:hover{
+#container-apps>li>a>img:hover{
     opacity: 0.8;
     transition: opacity .25s ease;
     -moz-transition: opacity .25s ease;

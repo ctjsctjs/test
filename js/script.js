@@ -1,42 +1,31 @@
 //Search Function
-function filterFunc() {
-  var input, filter, a, obj;
-  input = document.getElementById('search-form');
-  filter = input.value.toUpperCase();
-  obj = document.getElementsByClassName('filter');
-
-  for (i = 0; i < obj.length; i++) {
-    if (obj[i].lastChild.innerHTML.toUpperCase().indexOf(filter) > -1) {
-      obj[i].style.display = "";
-      } else {
-      obj[i].style.display = "none";
+function filterFunc(input) {
+    var userInput = input.value.toUpperCase();
+    var app = $('.app');
+    for (i = 0; i < app.length; i++) {
+        if (app[i].textContent.toUpperCase().indexOf(userInput) > -1) {
+            app[i].style.display = "";
+        } else {
+            app[i].style.display = "none";
+        }
     }
-  }
 }
 
-//Generate App list from Json file
-$.getJSON("../test/js/adapters.json", function (json) {
-  var container = document.getElementById("container-apps");
-  var listCol = 5;
-  for (var i = 0; i < json.adapters.length; i++) {
-    var obj = json.adapters[i];
-    var div = document.createElement('div');
-    var img = document.createElement('img');
-    var a = document.createElement('a');
-    div.className = 'filter';	
-    img.src = obj.image;	
-    a.href = obj.link;
-    a.appendChild(img);
-    a.target = '_blank';
-    div.appendChild(a);
-    div.innerHTML += "<div class='item-name black-font'>" + obj.name + "</div>";
-    container.appendChild(div);
-  }
-    
-  //Generate dummy box for responsive
-  for (i = 0; i < (listCol); i++) {
-    var div = document.createElement('div');
-    div.className = 'item flex-dummy';
-    container.appendChild(div);
-  }
+//Load JSON file to generate app listing
+$.getJSON("../test/adapters/adapters.json", function (json) {
+    var container = $("#container-apps");
+    var listCol = 5;
+
+    //Generate app list from adapters.JSON
+    json.adapters.forEach(function(adapter) {
+        var li = $('<li class="app">').appendTo(container);
+        var a = $('<a target="_blank">').attr('href', adapter.link).appendTo(li);
+        var img = $('<img>').attr('src', adapter.image).appendTo(a);
+        $('<div class="item-name black-font"></div>').text(adapter.name).appendTo(li);
+    })
+
+    //Generate dummy box for responsive
+    for (i = 0; i < (listCol); i++) {
+        var li = $('<li class="item flex-dummy"></li>').appendTo(container);
+    }
 });
